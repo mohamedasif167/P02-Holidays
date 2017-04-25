@@ -51,35 +51,10 @@ public class holiday_act extends AppCompatActivity {
         lvHoliday.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(holiday_act.this,holidaysSecular.get(position).getCategory(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(holiday_act.this,holidaysSecular.get(position).getDesc(), Toast.LENGTH_SHORT).show();
 
             }
         });
-
-//        if(category_name.equalsIgnoreCase("Ethnic & Religion")){
-//            //arrayAdapter = new HolidayAdapter(this, R.layout.row, holidaysReligion);
-//
-//            lvHoliday.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//                @Override
-//                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                    Toast.makeText(holiday_act.this,holidaysReligion.get(position).getCategory(), Toast.LENGTH_SHORT).show();
-//
-//                }
-//            });
-//
-//        }else{
-//            arrayAdapter = new HolidayAdapter(this, R.layout.row, holidaysSecular);
-//
-//            lvHoliday.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//                @Override
-//                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-////                    Toast.makeText(holiday_act.this,holidaysSecular.get(position).getName() +" Date: "+holidaysSecular.get(position).getDate(), Toast.LENGTH_SHORT).show();
-//                    Toast.makeText(holiday_act.this,holidaysSecular.get(position).getCategory(), Toast.LENGTH_SHORT).show();
-//
-//                }
-//            });
-//
-//        }
 
         lvHoliday.setAdapter(arrayAdapter);
 

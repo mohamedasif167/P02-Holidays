@@ -9,14 +9,14 @@ public class holiday {
     String name;
     String date;
     String img;
-    String category;
+    String desc;
 
 
-    public holiday(String name, String date, String img, String category) {
+    public holiday(String name, String date, String img, String desc) {
         this.name = name;
         this.date = date;
         this.img = img;
-        this.category = category;
+        this.desc = desc;
 
     }
 
@@ -44,14 +44,11 @@ public class holiday {
         this.img = img;
     }
 
-    public String getCategory() {
-        return category;
+    public String getDesc() {
+        return desc;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
-
-
-
 }
